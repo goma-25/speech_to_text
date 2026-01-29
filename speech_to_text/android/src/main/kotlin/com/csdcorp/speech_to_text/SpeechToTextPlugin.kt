@@ -691,6 +691,7 @@ public class SpeechToTextPlugin :
 
                         pauseFor?.also {
                             putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, it)
+                            putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS, it)
                         }
                     }
                 }
